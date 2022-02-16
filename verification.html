@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>ex1</title>
+        <link rel="stylesheet" href="verification.css">
+    </head>
+<body>
+    <h2 style="text-align: center;">Formulaire d'inscription</h2>
+    <form name="RegForm" action="/submit.php" onsubmit="return verif()" method="post" class="verif">
+      <div>
+        <label for="Nom">Nom:</label>
+        <input type="text" id="Nom" size="60" name="Nom" />
+      </div>
+      <br />
+      <div>
+        <label for="prénom">Prénom:</label>
+        <input type="text" id="prénom" size="60" name="prénom" />
+      </div>
+      <br />
+      <div>
+        <label for="E-mail" l>Email:</label>
+        <input type="text" id="E-mail" size="60" name="Email" />
+      </div>
+      <br />
+      <div>
+        <label for="Téléphone">Téléphone: </label>
+        <input type="text" id="Téléphone" size="60" name="Téléphone" />
+      </div>
+      <br />
+      <div>
+        <label for="Mot de passe">Mot de passe:</label>
+        <input type="text" id="Mot de passe" size="60" name="Mot de passe" />
+      </div>
+      <br />
+      <div>
+        <label for="confirmation">Confiramtion de mot de passe:</label>
+        <input type="text" id="confirmation" size="60" name="confirmation" />
+      </div>
+      <br />
+        <div>
+            <p>Choisir genre</p>
+            <input type='radio' id='myradio_1' name='radiobutton' value='femme'  checked /><label for="femme"> Femme</label>
+            <input type='radio' id='myradio_2' name='radiobutton' value='Homme' /><label for="homme"> Homme</label>
+    </div>
+      <br />
+      <div>
+        <label for="dateofbirth"> Date de naissance:</label>
+        <input type="text" id="dateofbirth" size="60" name="dateofbirth" />
+      </div>
+      <br />
+      <div class="buttons">
+        <input type="submit" value="Envoyer" name="Envoyer" />
+        <input type="reset" value="Rénit" name="Reset" />
+      </div>
+    </form>
+    <script src="main.js"></script>
+  </body>
+</html>
